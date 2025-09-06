@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USD | KRW | KZT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Currency Exchanger</h1>
+        <div class="input-group">
+            <label for="usd">USD</label>
+            <input type="number" id="usd" placeholder="Enter amount in USD" step="any">
+        </div>
+        <div class="input-group">
+            <label for="krw">KRW</label>
+            <input type="number" id="krw" placeholder="Enter amount in KRW" step="any">
+        </div>
+        <div class="input-group">
+            <label for="kzt">KZT</label>
+            <input type="number" id="kzt" placeholder="Enter amount in KZT" step="any">
+        </div>
+        <div class="note">Rates fetched from ExchangeRate-API (updated daily). Values persist after refresh.</div>
+        <div id="error" class="error"></div>
+    </div>
+  </body>
+</html>
